@@ -17,6 +17,7 @@ public class GenerateurFiches{
         for (String line : lines) {
             //On isole le nom
             String username = line;
+            
             Path fileAgent = Path.of("./ressources/"+username+".txt");
             List<String> linesAgent = Files.readAllLines(fileAgent);
             String nom;
